@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome to My Website",
@@ -19,5 +12,12 @@
     "title": "Welcome to My Website",
     "section": "",
     "text": "Here are some of my interests:\n\nReading\nTraveling\nCoding"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
