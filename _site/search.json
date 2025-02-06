@@ -11,13 +11,13 @@
     "href": "index.html",
     "title": "Welcome to My Website",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a brief introduction to my site.\n\n\nHere are some of my interests:\n\nReading\nTraveling\nCoding"
   },
   {
     "objectID": "index.html#my-interests",
     "href": "index.html#my-interests",
     "title": "Welcome to My Website",
-    "section": "My Interests",
-    "text": "My Interests\nHere are some of my interests:\n\nReading\nTraveling\nCoding"
+    "section": "",
+    "text": "Here are some of my interests:\n\nReading\nTraveling\nCoding"
   }
 ]
