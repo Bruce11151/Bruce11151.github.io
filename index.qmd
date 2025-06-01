@@ -40,6 +40,7 @@ format:
               --timeline-dot: #4a6fa5;
           }
           
+          html {scroll-padding-top: 80px;}
           
           /* Hide all title elements */
           .quarto-title, h1.title, header.quarto-title-block, .title-block, #title-block-header {
@@ -225,45 +226,7 @@ format:
               margin-bottom: 1rem;
           }
           
-          /* Timeline styling for experience */
-          .timeline {
-              position: relative;
-              max-width: 1200px;
-              margin: 0 auto;
-          }
-          
-          .timeline::after {
-              content: '';
-              position: absolute;
-              width: 2px;
-              background-color: var(--timeline-color);
-              top: 0;
-              bottom: 0;
-              left: 20px;
-              margin-left: -1px;
-          }
-          
-          .timeline-item {
-              padding: 10px 40px;
-              position: relative;
-              background-color: inherit;
-              width: 100%;
-              box-sizing: border-box;
-              margin-bottom: 20px;
-          }
-          
-          .timeline-item::after {
-              content: '';
-              position: absolute;
-              width: 16px;
-              height: 16px;
-              left: 12px;
-              background-color: var(--timeline-dot);
-              border: 2px solid var(--accent-color);
-              top: 15px;
-              border-radius: 50%;
-              z-index: 1;
-          }
+
           
           /* Profile section styling */
           .profile-container {
@@ -558,8 +521,8 @@ format:
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#research">Research</a>
-        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
         <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
     </div>
@@ -599,21 +562,23 @@ format:
 ```{=html}
 <section id="education">
   <h2>Education</h2>
+  
   <div class="education-item card">
     <h3>Boston University</h3>
+    <div class="location">Boston, MA</div>
     <div class="education-meta">
       <span>Master of Science in Business Analytics</span>
-      <span>Sept 2022 - Jun 2024</span>
+      <span>Expected December 2025</span>
     </div>
-    <p><strong>GPA:</strong> 3.43/4.0</p>
-    <p><strong>Key Courses:</strong> Data Mining for Business Analytics, Financial Concepts, Web Analytics for Business, Business Analytics Foundations, Quantitative and Qualitative Decision-Making, Marketing Analytics</p>
+    <p><strong>Key Courses:</strong> Data Mining for Business Analytics, Web Analytics for Business, Business Analytics Foundations, Quantitative and Qualitative Decision-Making, and Marketing Analytics</p>
   </div>
   
   <div class="education-item card">
     <h3>Dongguan University of Technology</h3>
+    <div class="location">Dongguan, Guangdong</div>
     <div class="education-meta">
-      <span>Bachelor of Engineering, Industrial</span>
-      <span>Sept 2020 - Jul 2024</span>
+      <span>Industrial Engineering, Bachelor of Engineering</span>
+      <span>Sept 2020 - July 2024</span>
     </div>
   </div>
 </section>
@@ -624,45 +589,45 @@ format:
   <h2>Professional Experience</h2>
   
   <div class="timeline-item card">
-    <h3>Ruican Plastic Manufacturing</h3>
+    <h3>Operations Analyst Intern</h3>
+    <div class="location">Ruican Plastic Manufacturing, Dongguan, Guangdong</div>
     <div class="card-meta">
-      <span>Marketing Department</span>
-      <span>Jan 2024 - Jul 2024</span>
+      <span>Jan 2024 – July 2024</span>
     </div>
     <ul>
-      <li>Collected and analyzed production and raw material usage data across manufacturing units, identifying patterns and inefficiencies</li>
-      <li>Created Excel-based dashboards to visualize material waste and monthly output trends, enabling data-driven decision making</li>
-      <li>Collaborated with warehouse staff to reconcile inventory discrepancies and optimize stock control</li>
-      <li>Assisted in preparing cost-performance reports to support management decision-making</li>
+      <li>Collected and analyzed production and raw material usage data across manufacturing units.</li>
+      <li>Created dashboards to visualize material waste and monthly output trends.</li>
+      <li>Managed inventory and stock optimization for the warehouse.</li>
+      <li>Prepared periodic cost-performance reports for workforce management.</li>
     </ul>
   </div>
-  
+
   <div class="timeline-item card">
-    <h3>ZW Investment</h3>
+    <h3>Investment Management Intern</h3>
+    <div class="location">ZW Investment, Guangzhou, Guangdong</div>
     <div class="card-meta">
-      <span>Department of Investment</span>
-      <span>Sept 2023 - Nov 2023</span>
+      <span>Sept 2023 – Nov 2023</span>
     </div>
     <ul>
-      <li>Assisted in the registration, information update, and custody access of private fund products</li>
-      <li>Maintained and updated official website data and WeChat official account</li>
-      <li>Collaborated with colleagues on presentations and provided daily and weekly work reports</li>
-      <li>Reviewed industry reports and conducted specific project research to compile research reports for the department</li>
+      <li>Assisted in preparing registration documents and compliance materials for private fund products.</li>
+      <li>Compiled internal reports on fund performance and regulatory policy updates to support decision-making.</li>
+      <li>Conducted weekly industry research and synthesized findings into team briefing materials.</li>
+      <li>Prepared weekly portfolio summaries and forecasts.</li>
     </ul>
   </div>
-  
+
   <div class="timeline-item card">
     <h3>E-commerce Entrepreneur</h3>
+    <div class="location">Individually-owned Business</div>
     <div class="card-meta">
-      <span>Individually-owned Business</span>
-      <span>Jan 2022 - Jul 2023</span>
+      <span>Jan 2022 – July 2023</span>
     </div>
-    <p><em>Established and managed a personal studio, including the acquisition of a Taobao e-store, and successfully recruited and supervised employees, resulting in substantial profitability.</em></p>
+    <p><em>Established and managed a Taobao-based studio, recruited employees, and maintained consistent profitability.</em></p>
     <ul>
-      <li>Monitored product stock levels and tracked inventory turnover to ensure product availability and timely, accurate order delivery</li>
-      <li>Regularly updated the e-store website with new products, descriptions, prices, and images</li>
-      <li>Conducted market research to stay abreast of industry trends, competitors, and customer preferences</li>
-      <li>Managed the entire team, including evaluating team performance and providing support</li>
+      <li>Monitored product stock levels and tracked inventory turnover to ensure timely order fulfillment.</li>
+      <li>Maintained and updated product listings, pricing, and visuals on the e-store.</li>
+      <li>Performed market research on competitors, customer preferences, and product trends.</li>
+      <li>Managed team operations, monitored performance, and provided training and support.</li>
     </ul>
   </div>
 </section>
@@ -675,130 +640,81 @@ format:
     <h3>Case Study on Sustainable Supply Chain Management</h3>
     <div class="card-meta">
       <span>Research Project</span>
-      <span>Feb 2023 - Apr 2023</span>
+      <span>Feb 2023 – Apr 2023</span>
     </div>
     <ul>
-      <li>Gained a fundamental understanding of supply relations and evaluated the advantages and disadvantages of various management methods</li>
-      <li>Conducted in-depth reviews and investigations through survey and model analysis methods across multiple case studies</li>
-      <li>Visualized industrial sales data utilizing charts and figures to assess the potential of China's car market and emphasize the necessity of sustainable supply chain management for Tesla's success</li>
-      <li>Formulated predictions and recommendations for the future development of the new energy vehicle industry</li>
-      <li>Co-authored a research paper focusing on a Tesla case study, handling the literature review and methodology components, which was accepted by ICEMGD 2023</li>
+      <li>Gained a fundamental understanding of supply relations and evaluated the advantages and disadvantages of various management methods.</li>
+      <li>Conducted in-depth reviews and investigations through survey and model analysis methods across multiple case studies.</li>
+      <li>Visualized industrial sales data utilizing charts and figures to assess the potential of China's car market and emphasize the necessity of sustainable supply chain management for Tesla's success.</li>
+      <li>Formulated predictions and recommendations for the future development of the new energy vehicle industry.</li>
+      <li>Co-authored a research paper focusing on a Tesla case study, handling the literature review and methodology components.</li>
+      <li>Published Work: Presented findings in the paper <em>“Sustainable Supply Chain of New Energy Vehicles: A Case Study of Tesla”</em> (Bai, Yan, & Yan, 2023), accepted by ICEMGD 2023 and indexed by CPCI and Google Scholar.</li>
     </ul>
   </div>
 </section>
 ```
-```{=html}
-<section id="skills">
-  <h2>Skills</h2>
-  
-  <div class="skills-container">
-    <div class="skill-category">
-      <h3>Programming & Data Analysis</h3>
-      <ul class="skill-list">
-        <li>Python (Pandas, NumPy, Scikit-learn)</li>
-        <li>R (dplyr, ggplot2)</li>
-        <li>SQL</li>
-        <li>Statistical Analysis</li>
-        <li>Data Mining</li>
-      </ul>
-    </div>
-    
-    <div class="skill-category">
-      <h3>Visualization Tools</h3>
-      <ul class="skill-list">
-        <li>Tableau</li>
-        <li>Microsoft Excel (Advanced)</li>
-        <li>Power BI</li>
-        <li>Data Dashboards</li>
-      </ul>
-    </div>
-    
-    <div class="skill-category">
-      <h3>Business & Analytics</h3>
-      <ul class="skill-list">
-        <li>Market Research</li>
-        <li>Financial Analysis</li>
-        <li>Supply Chain Management</li>
-        <li>Decision Analysis</li>
-        <li>Project Management</li>
-      </ul>
-    </div>
-    
-    <div class="skill-category">
-      <h3>Design & Software</h3>
-      <ul class="skill-list">
-        <li>SolidWorks</li>
-        <li>Photoshop</li>
-        <li>Microsoft Office Suite</li>
-      </ul>
-    </div>
-    
-    <div class="skill-category">
-      <h3>Languages</h3>
-      <ul class="skill-list">
-        <li>English (Professional)</li>
-        <li>Mandarin (Native)</li>
-      </ul>
-    </div>
-  </div>
-</section>
-```
+
 ```{=html}
 <section id="projects">
   <h2>Projects</h2>
   
   <div class="projects-grid">
+
     <div class="project-card">
       <div class="project-content">
-        <h3 class="project-title">Real Estate Market Analysis Dashboard</h3>
-        <p>Developed an interactive dashboard to analyze housing market trends across multiple regions using historical price data, demographic information, and economic indicators. The visualization helped identify investment opportunities and market patterns.</p>
+        <h3 class="project-title">Business Running Case: Evaluating Personal Job Market Prospects in 2024</h3>
+        <p>Conducted a data-driven 2024 labor market trends analysis using Lightcast job postings. Utilized Python (pandas, Plotly) for data cleaning and visualization, and published results through Quarto and GitHub Pages.</p>
+        <a class="project-button" href="https://shuyu-pan831.github.io/ad688-employability-sp25A1-group7.io/" target="_blank">View Project</a>
         <div class="project-tags">
-          <span class="project-tag">R</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Plotly</span>
+          <span class="project-tag">GitHub Pages</span>
+          <span class="project-tag">Quarto</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3 class="project-title">Predicting Consumer Disputes</h3>
+        <p>Developed a classification model (Naive Bayes and Decision Tree Classifiers) to detect whether consumers would dispute company responses based on historical complaint data.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Naive Bayes</span>
+          <span class="project-tag">Decision Tree</span>
+          <span class="project-tag">Classification</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3 class="project-title">Cruise Industry Expansion Strategy</h3>
+        <p>Developed an interactive Tableau dashboard and performed Python-based exploratory data analysis to assess cruise market conditions and Caribbean port metrics for expansion opportunities. Conducted conjoint analysis and classification modeling to optimize voyage offerings and predict cancellation risk, complemented by A/B testing for marketing image effectiveness.</p>
+        <div class="project-tags">
           <span class="project-tag">Tableau</span>
-          <span class="project-tag">Data Visualization</span>
-        </div>
-      </div>
-    </div>
-    
-    <div class="project-card">
-      <div class="project-content">
-        <h3 class="project-title">Investment Portfolio Optimization</h3>
-        <p>Created a Monte Carlo simulation model to analyze risk and return distributions for different asset allocations. Implemented modern portfolio theory to identify efficient frontier and optimal portfolio allocation under various constraints.</p>
-        <div class="project-tags">
+          <span class="project-tag">EDA</span>
           <span class="project-tag">Python</span>
-          <span class="project-tag">Financial Modeling</span>
-          <span class="project-tag">Statistics</span>
+          <span class="project-tag">Conjoint Analysis</span>
+          <span class="project-tag">A/B Testing</span>
         </div>
       </div>
     </div>
-    
-    <div class="project-card">
-      <div class="project-content">
-        <h3 class="project-title">Customer Retention Prediction Model</h3>
-        <p>Developed machine learning models (KNN and Naive Bayes) to predict customer churn based on historical behavior data. The models achieved over 80% accuracy and provided actionable insights for retention strategies.</p>
-        <div class="project-tags">
-          <span class="project-tag">Python</span>
-          <span class="project-tag">Machine Learning</span>
-          <span class="project-tag">Marketing Analytics</span>
-        </div>
-      </div>
-    </div>
-    
-    <div class="project-card">
-      <div class="project-content">
-        <h3 class="project-title">Manufacturing Waste Reduction Analysis</h3>
-        <p>Analyzed production data to identify sources of material waste in a manufacturing process. Created visualizations and KPI dashboards that led to process improvements reducing waste by 15%.</p>
-        <div class="project-tags">
-          <span class="project-tag">Excel</span>
-          <span class="project-tag">Process Analysis</span>
-          <span class="project-tag">Data Visualization</span>
-        </div>
-      </div>
-    </div>
+
   </div>
 </section>
 ```
 
+```{=html}
+<section id="skills">
+  <h2>Skills</h2>
+  
+  <div class="card">
+    <h3>Computer Skills</h3>
+    <p>Microsoft Office, R, Python, Tableau, SQL, Spark</p>
+  </div>
+</section>
+```
 
 ```{=html}
 <section id="contact">
